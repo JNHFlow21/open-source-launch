@@ -37,24 +37,27 @@ Open Source Launch 为 Codex 提供一套可重复执行的发布契约：
 
 ## 快速开始
 
-### 1. 使用 Codex 内置 Skill Installer 安装
+### 1. 安装到当前项目
 
-对 Codex 说：
+```bash
+DISABLE_TELEMETRY=1 npx skills add JNHFlow21/open-source-launch \
+  --skill open-source-launch \
+  --agent codex \
+  --yes
+```
+
+这条已验证路径会把 Skill 安装到当前项目的
+`.agents/skills/open-source-launch/`。`DISABLE_TELEMETRY=1` 用于关闭安装器 CLI
+的匿名遥测；Open Source Launch 本身不包含遥测。
+
+也可以让 Codex 内置 Skill Installer 完成安装：
 
 ```text
 Use $skill-installer to install open-source-launch from
 https://github.com/JNHFlow21/open-source-launch/tree/main/skills/open-source-launch
 ```
 
-也可以直接调用同一个安装器：
-
-```bash
-python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-installer/scripts/install-skill-from-github.py" \
-  --repo JNHFlow21/open-source-launch \
-  --path skills/open-source-launch
-```
-
-安装后开启一个新的 Codex 轮次，让系统重新发现 Skill。
+通过任一路径安装后，都要开启一个新的 Codex 轮次，让系统重新发现 Skill。
 
 ### 2. 执行只读发布审计
 
@@ -171,6 +174,7 @@ python3 skills/open-source-launch/scripts/install_repository_pulse.py \
 ## 要求与边界
 
 - 为 Codex Skills 设计并验证；其他兼容 `SKILL.md` 的 Agent 可能可用，但不属于已验证支持声明。
+- 只有项目级标准安装路径需要带 `npx` 的 Node.js；Skill 运行时不依赖 Node.js。
 - 只有确定性辅助脚本需要 Python 3.10+。
 - 需要 `git` 才能提供被跟踪文件和工作区状态证据。
 - `gh`、仓库 Owner 权限和 Gitleaks 都是可选项，仅用于对应的 GitHub 或历史密钥门禁。

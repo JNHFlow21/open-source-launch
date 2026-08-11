@@ -39,24 +39,28 @@ merge, change visibility, or place credentials in documentation.
 
 ## Quick start
 
-### 1. Install with Codex's built-in Skill Installer
+### 1. Install project-locally
 
-Ask Codex:
+```bash
+DISABLE_TELEMETRY=1 npx skills add JNHFlow21/open-source-launch \
+  --skill open-source-launch \
+  --agent codex \
+  --yes
+```
+
+This verified route installs the Skill into the current project's
+`.agents/skills/open-source-launch/` directory. `DISABLE_TELEMETRY=1` opts out
+of the installer CLI's anonymous telemetry; Open Source Launch itself has no
+telemetry.
+
+Alternatively, ask Codex's built-in Skill Installer:
 
 ```text
 Use $skill-installer to install open-source-launch from
 https://github.com/JNHFlow21/open-source-launch/tree/main/skills/open-source-launch
 ```
 
-Or run the same installer helper directly:
-
-```bash
-python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-installer/scripts/install-skill-from-github.py" \
-  --repo JNHFlow21/open-source-launch \
-  --path skills/open-source-launch
-```
-
-Start a new Codex turn after installation so the Skill can be discovered.
+Start a new Codex turn after either route so the Skill can be discovered.
 
 ### 2. Run a read-only launch audit
 
@@ -180,6 +184,7 @@ the public README URL never contains a long-lived token.
 ## Requirements and boundaries
 
 - Designed and verified for Codex Skills; other `SKILL.md`-compatible agents may work but are not part of the verified support claim.
+- Node.js with `npx` is required only for the canonical project-local install route; the Skill runtime does not depend on Node.js.
 - Python 3.10+ is required only for the deterministic helper scripts.
 - `git` is required for tracked-file and working-tree evidence.
 - `gh`, authenticated owner access, and Gitleaks are optional and used only for the corresponding GitHub/secret-history gates.
