@@ -1,0 +1,26 @@
+name: Feature request
+description: Propose a reusable improvement to the launch workflow.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Maintainer problem
+      description: Which open-source launch failure or repeated task should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and example
+      description: Provide a synthetic example, expected output, and relevant platform boundary.
+    validations:
+      required: true
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Workflow layer
+      options: [privacy/IP, portability, distribution, README, discovery/SEO/GEO, metrics, adoption, other]
+    validations:
+      required: true

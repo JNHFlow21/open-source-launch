@@ -1,0 +1,4 @@
+interface:
+  display_name: "Open Source Launch"
+  short_description: "Turn a local project into a portable public release"
+  default_prompt: "Audit and productize this project for an evidence-backed open-source GitHub launch, including portability, privacy, README, discovery, repository metadata, and a verified stranger-first install path."

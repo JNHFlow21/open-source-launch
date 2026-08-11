@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If Open Source Launch supports your release workflow, cite this repository."
+title: "Open Source Launch"
+type: software
+authors:
+  - name: "JNHFlow21"
+version: 0.1.0
+date-released: 2026-08-11
+url: "https://github.com/JNHFlow21/open-source-launch"
+repository-code: "https://github.com/JNHFlow21/open-source-launch"
+license: MIT
+abstract: >-
+  A Codex Skill that turns local or private projects into portable,
+  privacy-reviewed, discoverable, and verified public GitHub releases.

@@ -1,0 +1,42 @@
+name: Bug report
+description: Report a reproducible problem without sensitive repository content.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not paste credentials, private source, personal paths, or user data. Report security issues through a private advisory.
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options: [audit, prepare, launch, refresh, bundled script]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v0.1.0 or commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Sanitized reproduction
+      description: Use synthetic fixtures and include the smallest safe sequence.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python, Codex version, and relevant optional tools.
+    validations:
+      required: true
