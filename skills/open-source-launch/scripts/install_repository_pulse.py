@@ -157,8 +157,7 @@ def readme_snippet(repository: str) -> str:
     repository_url = f"https://github.com/{owner}/{name}"
     return (
         "## Repository activity\n\n"
-        f"[![Repository Pulse for {repository}]({raw_url})]({repository_url})\n\n"
-        "GitHub Traffic values are a dated rolling 14-day owner snapshot; public stars, forks, and commits refresh automatically."
+        f"[![Repository Pulse for {repository}]({raw_url})]({repository_url})"
     )
 
 

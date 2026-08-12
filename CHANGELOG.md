@@ -3,6 +3,15 @@
 All notable changes are documented here. This project follows semantic
 versioning for tagged releases.
 
+## [0.1.2] - 2026-08-11
+
+### Changed
+
+- Added a multilingual README quality gate that requires natural target-language
+  writing plus semantic parity with the canonical document.
+- Stopped generating generic GitHub Traffic disclaimer paragraphs beneath
+  Repository Pulse in either English or translated READMEs.
+
 ## [0.1.1] - 2026-08-11
 
 ### Changed
@@ -23,5 +32,6 @@ versioning for tagged releases.
 - Token-safe Repository Pulse installer and white-background SVG renderer.
 - English and Simplified Chinese repository documentation.
 
+[0.1.2]: https://github.com/JNHFlow21/open-source-launch/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/JNHFlow21/open-source-launch/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/JNHFlow21/open-source-launch/releases/tag/v0.1.0

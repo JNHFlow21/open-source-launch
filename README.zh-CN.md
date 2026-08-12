@@ -107,7 +107,7 @@ https://github.com/JNHFlow21/open-source-launch/tree/main/skills/open-source-lau
 ### 公共仓库产品化
 
 - 与实际维护模式相符的 LICENSE、SECURITY、CONTRIBUTING、CI、Release 和支持入口；
-- 有证据支撑的英文主 README，以及按需同步的翻译；
+- 有证据支撑的主 README，以及内容同步、表达自然、可以独立阅读的多语言版本；
 - 聚焦的仓库描述、Topics、Social Preview、自然搜索语言和稳定引用路径；
 - 放在 README 靠后位置的可选隐私安全仓库活动图。
 
@@ -227,9 +227,6 @@ python3 -m compileall -q skills/open-source-launch
 ## 仓库活动
 
 [![JNHFlow21/open-source-launch Repository Pulse](https://raw.githubusercontent.com/JNHFlow21/open-source-launch/metrics/repository-metrics.svg)](https://github.com/JNHFlow21/open-source-launch)
-
-GitHub Traffic 数值是带日期的 14 天滚动 Owner 快照；公开 Stars、Forks 和
-Commits 会自动刷新。
 
 ## 贡献、安全与许可证
 

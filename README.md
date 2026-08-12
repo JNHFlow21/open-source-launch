@@ -112,7 +112,7 @@ release, and live readback path.
 ### Public repository productization
 
 - LICENSE, SECURITY, CONTRIBUTING, CI, releases, and support routes that match the real maintenance model;
-- evidence-backed English README plus synchronized translations when needed;
+- evidence-backed canonical README plus synchronized, natural translations that read as native product pages;
 - focused GitHub description, topics, social preview, natural search language, and stable citation routes;
 - optional privacy-safe repository activity chart near the end of the README.
 
@@ -238,9 +238,6 @@ that could expose a credential, private repository, personal data, or exploit.
 ## Repository activity
 
 [![Repository Pulse for JNHFlow21/open-source-launch](https://raw.githubusercontent.com/JNHFlow21/open-source-launch/metrics/repository-metrics.svg)](https://github.com/JNHFlow21/open-source-launch)
-
-GitHub Traffic values are a dated rolling 14-day owner snapshot; public stars,
-forks, and commits refresh automatically.
 
 ## Contributing, security, and license
 
