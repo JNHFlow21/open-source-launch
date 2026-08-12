@@ -154,6 +154,23 @@ Default order:
 Keep product activity charts near the end. Stars, clone counts, and visitor
 counters are supporting social proof, not proof that the product works.
 
+For multilingual repositories, treat every README as a real landing page, not
+as machine-translated exhaust:
+
+- keep section order, capability claims, commands, examples, links, maturity,
+  and trust boundaries synchronized with the canonical README;
+- translate meaning and user intent rather than English syntax; use natural
+  terminology, sentence rhythm, and headings for the target language;
+- remove duplicated explanation, internal-maintainer context, and operational
+  detail that does not help a new user reach first value;
+- never let a hard-coded release number or configuration rule drift in only one
+  language;
+- review each translation on its own, then run a cross-language parity pass.
+
+Do not append generic prose beneath Repository Pulse. Its SVG already labels
+the metric window, snapshot date, and refresh behavior. Add surrounding prose
+only when the repository has a project-specific caveat the chart cannot show.
+
 ## Phase 6 — Improve discovery without SEO theater
 
 Read [`references/discovery-contract.md`](references/discovery-contract.md).

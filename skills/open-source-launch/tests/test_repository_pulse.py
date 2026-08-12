@@ -118,6 +118,18 @@ class RepositoryPulseTests(unittest.TestCase):
         self.assertNotIn("secrets.", workflow)
         self.assertNotIn("pull_request:", workflow)
 
+    def test_readme_snippet_contains_only_heading_and_linked_chart(self) -> None:
+        snippet = INSTALL.readme_snippet("owner/demo")
+
+        self.assertEqual(
+            snippet,
+            "## Repository activity\n\n"
+            "[![Repository Pulse for owner/demo](https://raw.githubusercontent.com/owner/demo/metrics/repository-metrics.svg)]"
+            "(https://github.com/owner/demo)",
+        )
+        self.assertNotIn("GitHub Traffic values", snippet)
+        self.assertNotIn("proof", snippet.lower())
+
 
 if __name__ == "__main__":
     unittest.main()

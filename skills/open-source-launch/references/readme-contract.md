@@ -32,6 +32,33 @@ belong above product proof or the quick start.
   audience; place a language switch first and synchronize critical claims in
   stable siblings such as `README.zh-CN.md`.
 
+## Multilingual quality gate
+
+A translated README must work as an independent product page for a native
+reader. Do not accept a literal, sentence-by-sentence translation merely
+because every English paragraph has a counterpart.
+
+For each maintained language:
+
+1. preserve the canonical section order, capability matrix, commands, example
+   outputs, links, maturity, costs, and trust boundaries;
+2. rewrite headings and prose in natural target-language syntax and established
+   technical terminology;
+3. keep the shortest useful explanation and move exhaustive implementation
+   detail to shared reference docs;
+4. remove maintainer-only machine context, duplicated setup guidance, and stale
+   hard-coded versions;
+5. render the document, validate code fences/tables/links, and compare it with
+   the canonical README for semantic—not necessarily line-for-line—parity.
+
+For Simplified Chinese, prefer direct Chinese developer prose over translated
+English noun stacks or mixed-language headings. Keep product and protocol names
+in English only when that is the familiar ecosystem term.
+
+Repository Pulse is self-describing. By default, place only the linked SVG in
+the activity section; do not generate a generic English or Chinese paragraph
+about Traffic windows, automatic refresh, or whether clones prove adoption.
+
 ## Avoid
 
 - badge walls, decorative traffic counters, or Star History as product proof;
